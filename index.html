@@ -11,9 +11,160 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Hello, world!</title>
+    
+    <style>
+        .first-column {
+          height: 400px;
+          padding: 15%;
+          text-align: center;
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+          border: 2px solid black;
+        }
+    
+        .second-column {
+          padding-bottom: 5%;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+        }
+    
+        .third-column-first-row {
+          border-top-right-radius: 50px;
+          border-top: 2px solid black;
+          border-right: 2px solid black;
+          background-color: rgb(245, 245, 158);
+        }
+    
+        .third-column-second-row {
+    
+          border-right: 2px solid black;
+          background-color: rgb(247, 247, 78);
+        }
+    
+        .third-column-third-row {
+          border-bottom-right-radius: 50px;
+          border-bottom: 2px solid black;
+          border-right: 2px solid black;
+          background-color: rgb(245, 245, 0);
+        }
+      </style>
 </head>
 
 <body>
+
+    <!-- Top page Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+    <section>
+        <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
+        <p class="lead text-center mt-5 mb-5">Recreate this table just using Bootstrap4 classes or styling without adding /
+          removing any dom element.</p>
+        <div class="row">
+          <div
+            class="col-xs-12 col-md-6 bg-success d-flex align-items-center justify-content-center text-light first-column">
+            First Column
+            Height 400px;
+            Green-ish background
+            Text centered
+          </div>
+          <div class="col-xs-12 col-md-2 bg-primary d-flex flex-column justify-content-end text-light second-column">
+            Second Column
+            Text to the bottom
+            Bold , bluish background
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="row h-100">
+              <div class="col-sm-12 d-flex align-items-center justify-content-center third-column-first-row">
+                Third Column Part 1
+              </div>
+              <div class="col-sm-12 d-flex align-items-center justify-content-center third-column-second-row">
+                Third Column Part 2
+              </div>
+              <div class="col-sm-12 d-flex align-items-center justify-content-center third-column-third-row">
+                Third Column Part 3
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+
+      
+    <section>
+
+        <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 2</h1>
+        <p class="lead text-center mt-5 mb-5">Create a pricing table to sell your product! Classical,3 card approach with 3 pricing. This is a classical usewr/priced product, with new feature enabled for the pro/enterprise version.</p>
+  
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Featured</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">0€ <span class="text-muted">/ mo</span> </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">10 users incldued</li>
+                  <li class="list-group-item border-bottom-0 text-center">2 GB of storage</li>
+                  <li class="list-group-item border-bottom-0 text-center">Email support</li>
+                  <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">Sign up for free</button>
+              </div>
+  
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Pro</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">15€ <span class="text-muted">/ mo</span> </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">20 users incldued</li>
+                  <li class="list-group-item border-bottom-0 text-center">10 GB of storage</li>
+                  <li class="list-group-item border-bottom-0 text-center">Priority email support</li>
+                  <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+                </ul>
+                <button class="btn btn-primary w-100">Get Started</button>
+              </div>
+  
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Enterprise</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">29€ <span class="text-muted">/ mo</span> </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">30 users incldued</li>
+                  <li class="list-group-item border-bottom-0 text-center">15 GB of storage</li>
+                  <li class="list-group-item border-bottom-0 text-center">Phone and email support</li>
+                  <li class="list-group-item border-bottom-0 text-center">Help center access</li>
+                </ul>
+                <button class="btn btn-primary w-100">Contact us</button>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+    </div>
+
     <!-- Exercise 3 -->
     <div class="container">
         <div class="row">
@@ -315,7 +466,8 @@
         </div>
     </div>
 </div>
-
+   
+   
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
