@@ -1,0 +1,19 @@
+.btn {
+    /* top-left | top-right | bottom-right | bottom-left */
+
+    border-radius: 0;
+    border: 1px solid grey;
+    margin-right: 0;
+}
+
+.row>.col-8>h2 {
+    font-size: 48px;
+} 
+
+.row>.col-8>p {
+    font-size: 36px;
+}
+
+.older {
+    color: blue;
+}
