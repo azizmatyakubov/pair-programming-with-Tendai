@@ -1,0 +1,7 @@
+.btn {
+    /* top-left | top-right | bottom-right | bottom-left */
+
+    border-radius: 0;
+    border: 1px solid grey;
+    margin-right: 0;
+}
